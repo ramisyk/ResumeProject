@@ -130,17 +130,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <form action="#" method="post" runat="server">
                     <div class="row contact_top">
                         <div class="col-sm-6">
-                            <asp:TextBox ID="TextBox1" runat="server" placeholder="Name"></asp:TextBox>
+                            <asp:TextBox ID="txtName" runat="server" placeholder="Name"></asp:TextBox>
                         </div>
                         <div class="col-sm-6">
-                            <asp:TextBox ID="TextBox2" runat="server" placeholder="Email"></asp:TextBox>
+                            <asp:TextBox ID="txtMail" runat="server" placeholder="Email"></asp:TextBox>
                         </div>
                     </div>
-                    <asp:TextBox ID="TextBox3" runat="server" placeholder="Subject..."></asp:TextBox>
-                    <asp:TextBox ID="TextBox4" runat="server" placeholder="Message..." TextMode="MultiLine" Height="50"></asp:TextBox>
+                    <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject..."></asp:TextBox>
+                    <asp:TextBox ID="txtMessage" runat="server" placeholder="Message..." TextMode="MultiLine" Height="50"></asp:TextBox>
                     
-                    <asp:Button ID="Button1" runat="server" Text="Send" CssClass="btn btn-info" />
-                    <asp:Button ID="Button2" runat="server" Text="Cancel" CssClass="btn btn-warning" />
+                    <asp:Button ID="btnSend" runat="server" Text="Send" CssClass="btn btn-info" OnClick="btnSend_Click" />
+                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="btn btn-warning" />
 
                     <div class="clearfix"></div>
                 </form>

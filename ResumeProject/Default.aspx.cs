@@ -25,5 +25,16 @@ namespace ResumeProject
             RptSkill.DataBind();
             
         }
+
+        protected void btnSend_Click(object sender, EventArgs e)
+        {
+            Contact contact = new Contact();
+            contact.Name = txtName.Text;
+            contact.Mail = txtMail.Text;
+            contact.Subject = txtSubject.Text;
+            contact.Message = txtMessage.Text;
+            db.Contact.Add(contact);
+            db.SaveChanges();
+        }
     }
 }
